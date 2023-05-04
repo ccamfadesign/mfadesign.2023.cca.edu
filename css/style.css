@@ -1,0 +1,297 @@
+/* ---UNIVERSAL STYLES--- */
+
+* {
+  background-color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 20px;
+}
+
+body {
+  margin: 0px;
+}
+
+a{
+  color: #000000;
+}
+
+h1 {
+  font-size: 47px;
+  font-weight: 200;
+  padding-left: 5px;
+  padding-right: 5px;
+  /* cursor: pointer; */
+  padding-top: 0px;
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 200;
+  /* padding: 5px; */
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 8px;
+  /* margin: 0px; */
+}
+
+.hide-text {
+  opacity: 0;
+}
+
+.links {
+  /* font-size: 20px; */
+  display: block;
+  padding-left: 3px;
+  padding-right: 5px;
+  line-height: 1.3em;
+}
+
+.content > div {
+  padding-bottom: 16px;
+}
+
+img {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* content: url("https://picsum.photos/347/500"); */
+}
+
+ul {
+  /* font-size: 20px; */
+  list-style-type: none;
+  padding: 5px; 
+  margin: 0; /* Remove margins */
+
+}
+
+
+/* -----------TEMPLATE DIV SIZES------------ */
+
+.XS{
+  height: 124px;
+}
+
+.S {
+  height: 250px;
+  /* border: 2px solid blue; */
+  /* background-color: #00A95C; */
+}
+
+.M{
+  height: 375px;
+  /* border: 2px solid yellow; */
+  /* background-color: rgb(208, 0, 255); */
+}
+
+.L {
+  height: 500px;
+  /* background-color: #1B32A7; */
+}
+
+.XL {
+  height: 900px;
+  /* background-color: #fff700; */
+}
+
+.fixed-header {
+  position: fixed;
+  /* width: calc(100% - 16px); */
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 30px;
+  /* background-color: aqua; */
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: -20px;
+  padding-left: 8px;
+  padding-top: 4px;
+}
+
+.header-item {
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.right-align {
+  /* text-align: right; */
+}
+
+/* LINE BREAK FOR HEADER */
+hr.solid {
+  border-top: 2px solid #000000;
+}
+
+
+.title {
+  font-size: 200px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.column-container {
+  padding-top: 53px;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: wrap;
+  /* flex-flow: column wrap; */
+  justify-content: center;
+}
+
+.student-index {
+  background-color: #FFFFFF;
+  min-height: 500px;
+}
+.student-index h1 {
+  background-color: #FFFFFF;
+}
+.student-index > p {
+  background-color: #FFFFFF;
+  line-height: .25em;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.student-index-mobile {
+  background-color: #FFFFFF;
+}
+.student-index-mobile h1 {
+  background-color: #FFFFFF;
+}
+.student-index-mobile > p {
+  background-color: #FFFFFF;
+  line-height: .25em;
+  text-decoration: underline;
+  text-align: center;
+  cursor: pointer;
+}
+.student-index-mobile .student {
+  display: none;
+  margin-bottom: 80px;
+}
+
+.exhibition {
+  min-height: 700px;
+}
+
+
+#sixeight {
+  /* visibility: hidden; */
+  display: none;
+}
+
+/* #nine {
+  display: none;
+} */
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  overflow: scroll;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-overflow-scrolling: auto;
+  -ms-overflow-style: none;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+/* NO SCROLL BAR */
+.column::-webkit-scrollbar {
+  display: none;
+}
+
+.content {
+  /* display: none; */
+  margin-bottom: 23px;
+}
+
+
+.one {
+  background-color: blue;
+
+}
+.two {
+  background-color: rgb(36, 121, 36);
+
+}
+.three {
+  background-color: rgb(67, 23, 161);
+
+}
+.four {
+  background-color: rgb(235, 11, 126);
+
+}
+.five {
+  background-color: rgb(225, 255, 0);
+
+}
+
+
+
+
+
+
+/* WINDOW RESIZING MEDIA QUERY*/
+
+@media screen and (min-width: 1200px) {
+  .five-col {
+    display: flex;  
+  }
+
+  .three-col {
+    display: none;
+  }
+
+  .one-col {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .five-col {
+    display: none; 
+  }
+
+  .three-col {
+    display: flex;
+  }
+
+  .one-col {
+    display: none;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .five-col {
+    display: none;  
+  }
+
+  .three-col {
+    display: none;
+  }
+
+  .one-col {
+    display: flex;
+  }
+
+  #student-index {
+    display: none;
+  }
+
+  #interference {
+    display: none;
+  }
+
+  .right-align {
+    text-align: right;
+    padding-right: 16px;
+  }
+}
