@@ -50,6 +50,10 @@ p {
   padding-bottom: 16px;
 }
 
+.student > .links {
+  padding-bottom: 32px;
+}
+
 img {
   width: 100%;
   padding-top: 10px;
